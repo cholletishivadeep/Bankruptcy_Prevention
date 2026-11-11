@@ -1,27 +1,27 @@
 # Bankruptcy_Prevention
-Project Overview
+1. Project Overview
 
-The Bankruptcy Prevention System is a Machine Learning classification project that predicts whether a company is likely to face bankruptcy based on different business risk factors.
+The Bankruptcy Prevention System is a Machine Learning classification project that predicts whether a company is likely to face bankruptcy based on six business risk factors.
 
-The objective is to help identify companies that may be at risk of bankruptcy and support better business decision-making.
+The main objective is to identify companies that may be at risk of bankruptcy and support better business decision-making.
 
-Problem Statement
+2. Problem Statement
 
-To develop a classification model that predicts whether a company belongs to the bankruptcy or non-bankruptcy category using six business risk factors.
+To build a Machine Learning classification model that predicts whether a company belongs to the bankruptcy or non-bankruptcy category using its business risk factors.
 
-Dataset Information
+3. Dataset Information
 
 Dataset: Bankruptcy Prevention Dataset
 
 Total Records: 250
 
-Total Features: 6
+Input Features: 6
 
 Target Variable: class
 
 Problem Type: Binary Classification
 
-Input Features
+4. Input Features
 
 Industrial Risk
 
@@ -35,13 +35,15 @@ Competitiveness
 
 Operating Risk
 
-Target Variable
+5. Target Variable
+
+The target variable contains two classes:
 
 0 – Bankruptcy
 
 1 – Non-Bankruptcy
 
-Technologies Used
+6. Technologies Used
 
 Python
 
@@ -59,7 +61,7 @@ Joblib
 
 Streamlit
 
-Project Workflow
+7. Project Workflow
 
 Data Loading
 
@@ -79,15 +81,15 @@ Model Saving
 
 Streamlit Deployment
 
-Machine Learning Models
+8. Machine Learning Algorithms
 
-The project explores multiple classification algorithms:
+The following classification algorithms were considered:
 
 Logistic Regression
 
-K-Nearest Neighbors
+K-Nearest Neighbors (KNN)
 
-Support Vector Machine
+Support Vector Machine (SVM)
 
 Decision Tree
 
@@ -95,38 +97,53 @@ Random Forest
 
 Gradient Boosting
 
-Streamlit Application
+9. Streamlit Application
 
-The trained model is integrated into a Streamlit web application.
+The trained Machine Learning model is integrated into a Streamlit web application.
 
-Users can enter the six company risk factors and receive a bankruptcy prediction.
+Users can enter the six company risk factors and receive a prediction:
 
-Project Structure
+Bankruptcy Predicted
+
+Non-Bankruptcy Predicted
+
+10. Project Structure
 
 Bankruptcy-Prevention/
 │
-├── app1.py
+├── app.py
 ├── bankruptcy_model.pkl
 ├── requirements.txt
 ├── README.md
 └── Bankruptcy_prevention_Dataset(1).csv
 
-How to Run the Project Locally
+Note: The dataset file is optional for running the deployed application if the trained model is already saved.
 
-Clone the repository:
+11. How to Run the Project Locally
+
+Step 1: Clone the repository
 
 git clone YOUR_GITHUB_REPOSITORY_URL
 
-Install the required libraries:
+Step 2: Open the project folder
+
+cd Bankruptcy-Prevention
+
+Step 3: Install the required libraries
 
 pip install -r requirements.txt
 
-Run the Streamlit application:
+Step 4: Run the Streamlit application
 
-streamlit run app1.py
+streamlit run app.py
 
-Project Objective
+12. Project Objective
 
-To apply Machine Learning classification techniques to identify bankruptcy risk and build an interactive prediction application.
+The objective of this project is to apply Machine Learning classification techniques to identify potential bankruptcy risk and develop an interactive web application for company bankruptcy prediction.
 
-Author
+13. Author
+
+Shivadeep
+
+14. Application Link
+
