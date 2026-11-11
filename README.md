@@ -146,4 +146,5 @@ The objective of this project is to apply Machine Learning classification techni
 Shivadeep
 
 14. Application Link
+    https://bankruptcypreventionproject.streamlit.app
 
